@@ -1,0 +1,192 @@
+body{
+    
+    background-color: rgb(0, 41, 0);
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/1200x/9a/87/d5/9a87d5005fa93d3dc02d1610f30fb67f.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+#TITULO {
+    color: #ffffff;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
+#botones a {
+    color: #ffffff; /* Verde brillante estilo Arrow */
+    background-color: rgba(0,0,0,0.6); /* Fondo semitransparente */
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* transición suave para hover */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    box-shadow: 0 0 5px #ffffff; /* resplandor leve */
+    position: static;
+
+}
+
+#botones a:hover {
+    background-color: #ffffff; /* cambia fondo a verde */
+    color: #000; /* texto negro al pasar el mouse */
+    box-shadow: 0 0 15px #414a41; /* resplandor más fuerte */
+}
+
+
+nav ul {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si hay altura */
+    list-style: none; /* Quita las viñetas */
+    margin: 10px;
+}
+
+nav ul li {
+    margin: 30px; /* Espacio entre botones */
+}
+
+
+.nombre-personaje {
+    font-family: 'Arrow' ;
+    font-size: 30px;
+    display: block;
+    width: 190px;
+    margin: 55px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center; /* centra el texto bajo cada imagen */
+    color: white;       /* cambiá según tu fondo */
+}
+
+.temporada {
+    font-family: 'Arrow' ;
+    font-size: 25px;
+    display: block;
+    width: 190px;
+    margin: 55px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center; /* centra el texto bajo cada imagen */
+    color: white;       /* cambiá según tu fondo */
+}
+
+
+
+main {
+    overflow: hidden; /* hace que main contenga las columnas flotantes */
+    padding: 20px;
+}
+
+.izquierda {
+    float: left;       /* pega la columna a la izquierda */
+    width: 500px;      /* ancho de la columna */
+    margin-left: 20px;
+    display: flex;         /* activa flex */
+    flex-direction: column;/* apila los hijos verticalmente */
+    align-items: center;   /* centra todo horizontalmente */
+}
+
+.derecha {
+    float: right;      /* pega la columna a la derecha */
+    width: 500px;      /* ancho de la columna */
+    margin-right: 20px;
+    display: flex;         /* activa flex */
+    flex-direction: column;/* apila los hijos verticalmente */
+    align-items: center;   /* centra todo horizontalmente */
+}
+
+.izquierda img, .derecha img {
+    display: block;    /* apila imágenes verticalmente */
+    margin-bottom: 10px;
+}
+
+#Temporada1 {
+    color: white;
+    font-family: 'Arrow' ;
+    font-size: 25px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#Temporada2 {
+    color: white;
+    font-family: 'Arrow' ;
+    font-size: 25px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#Temporada3 {
+    color: white;
+    font-family: 'Arrow' ;
+    font-size: 25px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#Temporada4 {
+    color: white;
+    font-family: 'Arrow' ;
+    font-size: 25px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* ✅ Ajustes para tablet (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  #TITULO {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap; /* Si no entra, pasa a otra línea */
+    gap: 10px;
+  }
+
+  .izquierda, .derecha {
+    float: none;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+}
+
+/* ✅ Ajustes para móvil (pantallas menores a 480px) */
+@media (max-width: 480px) {
+  #TITULO {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column; /* Menú en columna */
+    align-items: center;
+    gap: 15px;
+  }
+
+  #botones a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 80%; /* Botones más anchos */
+    text-align: center;
+  }
+
+  .fotojp {
+    width: 90%; /* Imagen se adapta */
+  }
+
+  p {
+    font-size: 1rem; /* Texto más chico */
+  }
+}
